@@ -24,6 +24,7 @@ import ListChild from "./components/ListChild";
 import ItemList from "./components/ItemList";
 import CustomList from "./components/CustomList";
 import CustomObj from "./components/CustomObj";
+import ExampleChangeObj from "./components/ExampleChangeObj";
 
 function App() {
   const nameArr = ["뽀로로", "루피", "크롱이"];
@@ -35,8 +36,7 @@ function App() {
 
   return (
     <div className="App">
-      <CustomList arr={nameArr} />
-      <CustomObj obj={pororoObj} />
+      <ExampleChangeObj />
     </div>
   );
 }

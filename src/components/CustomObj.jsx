@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function CustomObj(props) {
+  if (props.obj) {
   const { name, age, nickName } = props.obj
   return (
     <div>
@@ -9,4 +10,11 @@ export default function CustomObj(props) {
       <h2>별명 : {nickName}</h2>
     </div>
   )
+} else {
+  return (
+    <div>
+      데이터가 없습니다!
+    </div>
+  )
+}
 }
