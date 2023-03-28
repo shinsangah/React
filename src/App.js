@@ -18,13 +18,13 @@ import StateProblem from "./components/StateProblem";
 import List from "./components/List";
 import Modal from "./components/Modal";
 import PropsHeader from "./components/PropsHeader";
+import MultiProps from "./components/MultiProps";
 
 function App() {
+  const str = "Go Naver";
   return (
     <div className="App">
-      <PropsHeader text="Hello, Props World!" />
-      <PropsHeader text="Bye, Props World!" />
-      <PropsHeader text="Welcome back, Props World!" />
+      <MultiProps text={str} href="https://naver.com" userID="tetz" />
     </div>
   );
 }
