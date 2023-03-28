@@ -21,11 +21,22 @@ import PropsHeader from "./components/PropsHeader";
 import MultiProps from "./components/MultiProps";
 import ClassProps from "./components/ClassProps";
 import ListChild from "./components/ListChild";
+import ItemList from "./components/ItemList";
+import CustomList from "./components/CustomList";
+import CustomObj from "./components/CustomObj";
 
 function App() {
+  const nameArr = ["뽀로로", "루피", "크롱이"];
+  const pororoObj = {
+    name: "뽀로로",
+    age: "5",
+    nickName: "사고뭉치",
+  };
+
   return (
     <div className="App">
-      <List />
+      <CustomList arr={nameArr} />
+      <CustomObj obj={pororoObj} />
     </div>
   );
 }
