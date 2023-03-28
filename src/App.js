@@ -16,11 +16,15 @@ import ClassState from "./components/ClassState";
 import StateAndVariable from "./components/StateAndVariable";
 import StateProblem from "./components/StateProblem";
 import List from "./components/List";
+import Modal from "./components/Modal";
+import PropsHeader from "./components/PropsHeader";
 
 function App() {
   return (
     <div className="App">
-      <List />
+      <PropsHeader text="Hello, Props World!" />
+      <PropsHeader text="Bye, Props World!" />
+      <PropsHeader text="Welcome back, Props World!" />
     </div>
   );
 }
