@@ -19,12 +19,13 @@ import List from "./components/List";
 import Modal from "./components/Modal";
 import PropsHeader from "./components/PropsHeader";
 import MultiProps from "./components/MultiProps";
+import ClassProps from "./components/ClassProps";
+import ListChild from "./components/ListChild";
 
 function App() {
-  const str = "Go Naver";
   return (
     <div className="App">
-      <MultiProps text={str} href="https://naver.com" userID="tetz" />
+      <List />
     </div>
   );
 }

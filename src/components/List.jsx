@@ -1,4 +1,5 @@
 import React from 'react';
+import ListChild from './ListChild';
 import Modal from './Modal';
 
 export default function List() {
@@ -7,13 +8,8 @@ export default function List() {
     <div>
       <h1>오늘 해야 할 일</h1>
       <Modal />
-      <hr />
-      <h2>리액트 공부하기</h2>
-      <p>state 사용법 익히기</p>
-      <hr/>
-      <h2>코테 문제 풀기</h2>
-      <p>Lv 0 정복 가즈아</p>
-      <hr />
+      <ListChild title="리액트 공부하기" todo="state 사용법 익히기"/>
+      <ListChild title="코테 문제 풀기" todo="Lv 0 정복 가즈아"/>
       <Modal />
     </div>
   )
