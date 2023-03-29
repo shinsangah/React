@@ -28,12 +28,13 @@ import ExampleChangeObj from './components/ExampleChangeObj';
 import TestRef from './components/TestRef';
 import ChangeFocus from './components/ChangeFocus';
 import RefDomControl from './components/RefDomControl';
-import ColorEx from './components/ColorEx';
+import ExampleRefDom from './components/ExamplRefDom';
+import Gugudan from './components/Gugudan';
 
 function App() {
   return (
     <div className="App">
-      <ColorEx />
+      <Gugudan />
     </div>
   );
 }
