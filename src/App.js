@@ -29,12 +29,14 @@ import TestRef from './components/TestRef';
 import ChangeFocus from './components/ChangeFocus';
 import RefDomControl from './components/RefDomControl';
 import ExampleRefDom from './components/ExamplRefDom';
-import Gugudan from './components/Gugudan';
+import RandomQuiz from './components/RandomQuiz';
+import Comparing from './components/Comparing';
+import ReactFragment from './components/ReactFragment';
 
 function App() {
   return (
     <div className="App">
-      <Gugudan />
+      <ReactFragment />
     </div>
   );
 }
