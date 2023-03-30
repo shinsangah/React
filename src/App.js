@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import TestUseEffect from './components/TestUseEffect';
+import TimerRender from './components/TimerRender';
 
 function App() {
   return (
     <div className="App">
-      <TestUseEffect />
+      <TimerRender />
     </div>
   );
 }
