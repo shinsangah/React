@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import TimerRender from './components/TimerRender';
+import PracticeTimerRender from './components/PracticeTimerRender';
 
 function App() {
   return (
     <div className="App">
-      <TimerRender />
+      <PracticeTimerRender />
     </div>
   );
 }
