@@ -1,5 +1,7 @@
 // ReactFragment : 축약 (fragment: 파편)
 
+import React from 'react';
+
 export default function ReactFragment() {
   return (
     <>
@@ -9,4 +11,4 @@ export default function ReactFragment() {
   );
 }
 
-// CSS 구축을 해놨는데 div 요소로 인해 꺠질 때 해방
+// CSS 구축을 해놨는데 div 요소로 인해 깨질 때 해방

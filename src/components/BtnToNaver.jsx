@@ -12,11 +12,11 @@
 
 // 최신 문법
 
-function BtnToNaver () {
-  const addr = "http://naver.com";
-  
+function BtnToNaver() {
+  const addr = 'http://naver.com';
+
   return <a href={addr}>네이버 페이지 이동</a>;
-};
+}
 
 export default BtnToNaver;
 // 하나 뺄 때는 default 붙여서

@@ -6,9 +6,9 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <>
     <App />
-  </React.StrictMode>
+  </>,
   // 이것 때문에 콘솔로그에 2번 찍힘
 );
 
