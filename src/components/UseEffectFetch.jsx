@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ProfileComponent from './ProfileComponent';
 
 export default function UseEffectFetch() {
   const [dataArr, setDataArr] = useState([]);
@@ -11,18 +12,30 @@ export default function UseEffectFetch() {
       },
     });
 
-    if (resFetch.status !== 200) return '망했어요';
+    if (resFetch.status !== 200) return '1';
 
     const data = await resFetch.json();
-    // 자바스크립트 데이터 함수로 변경한 함수 / 객체
     console.log(data);
     setDataArr((cur) => data);
-    // => 화살표 뒤에 중괄호 없으면 return 이라고 생각
+    console.log(dataArr);
   }
 
-  useEffect(async () => {
+  useEffect(() => {
     fetchData();
   }, []);
 
-  return <div>UseEffectFetch</div>;
+  return (
+    <>
+      {dataArr.map((el) => {
+        return (
+          <ProfileComponent
+            name={el.name}
+            age={el.age}
+            nickName={el.nickName}
+            key={el.name}
+          />
+        );
+      })}
+    </>
+  );
 }
