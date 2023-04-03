@@ -1,5 +1,5 @@
-import React from 'react'
-import ChangeObj from './ChangeObj'
+import React from 'react';
+import ChangeObj from './ChangeObj';
 
 export default function ExampleChangeObj() {
   const pororoArr = [
@@ -17,12 +17,12 @@ export default function ExampleChangeObj() {
       name: '크롱이',
       age: 5,
       nickName: '장난꾸러기',
-    }
-  ]
+    },
+  ];
 
   return (
     <div>
       <ChangeObj objArr={pororoArr} />
     </div>
-  )
+  );
 }
